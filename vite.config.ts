@@ -6,4 +6,12 @@ import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), TanStackRouterVite()],
+  resolve: {
+    alias: {
+      "@": "/src",
+      "@shared": "/src/shared",
+      "@components": "/src/shared/components",
+      "@assets": "/src/shared/assets",
+    },
+  },
 });

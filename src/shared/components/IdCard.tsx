@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import IdCardImage from "../assets/svgs/id_card.svg";
+import IdCardImage from "@assets/svgs/id_card.svg";
 
 export default function IdCard() {
   const [transform, setTransform] = useState("");
